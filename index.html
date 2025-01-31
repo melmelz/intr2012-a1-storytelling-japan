@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <!-- METADATA GOES HERE -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>A1</title>
+    <link href="style.css" rel="stylesheet">
+
+    <!-- BOOTSTRAP 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.2/lib/p5.min.js"></script>
+
+    <script src="script.js"></script>
+
+</head>
+
+<div class="container py-4">
+    <div class="row">
+        <div class="mb-3">
+            <img src="fuji.jpg" alt="header_img" class="img-fluid">
+            <h6>By MZC - January 2025</h6>
+
+            <div class="p-3 mb-2 bg-danger text-white text-center">
+                <h2>REASONS TO VISIT JAPAN THIS YEAR!</h2>
+            </div>
+            <!------------------------------------------INTRO---------------------------------------------------------------------------------------->
+            <div class="row mt-4">
+                <h2 class="text-danger" style="padding: 30px 0px 15px;">WHY IS JAPAN SUCH A POPULAR TRAVEL DESTINATION?
+                </h2>
+                <h5>Welcome!</h5>
+                <p>A little overview - Japan is an island nation in East Asia, known for its fascinating mix of ancient
+                    culture and
+                    cutting-edge innovation. Made up of four main islands—Hokkaido, Honshu, Shikoku, and Kyushu—along
+                    with thousands of smaller ones, Japan offers a diverse range of experiences. From the bustling
+                    streets of Tokyo to the historic temples of Kyoto and the natural beauty of Mount Fuji. </p>
+
+                <p>With a population of over 123 million, Japan is a country that values its rich traditions while
+                    embracing the future. Whether you're exploring its vibrant cities, relaxing in hot springs, or
+                    enjoying world-famous cuisine like sushi and ramen, Japan is a destination that leaves a lasting
+                    impression.</p>
+
+                <p>Japan’s alluring mix of culture, cuisine, and modern marvels makes it a must-visit travel
+                    destination! Japan’s appeal lies in its unique ability to offer something for every type of
+                    traveler.
+                </p>
+                <p>If you love <b>history and culture</b>, cities like Kyoto and Nara are perfect. You can explore
+                    ancient
+                    temples, peaceful shrines, and traditional tea houses that show Japan’s rich past and customs.</p>
+                <p>For those who enjoy <b>modern cities and technology</b>, Tokyo is a must-see. It has futuristic
+                    skyscrapers, the latest gadgets, and exciting districts like Shibuya and Akihabara. But you can
+                    still
+                    find history in areas like Asakusa, where the famous Senso-ji Temple stands.</p>
+                <p><b>Foodies</b> will have an unforgettable experience in Japan! From high-end Michelin-starred
+                    restaurants
+                    to small, cozy izakayas, there’s a huge variety of delicious dishes to try, making every meal
+                    special.
+                </p>
+
+                <h2 class="text-danger" style="padding: 30px 0px 0px;">WHAT MAKES 2025 SUCH A SPECIAL YEAR TO VISIT
+                    JAPAN?</h2>
+            </div>
+
+            <!------------------------------------------BOX SECTION---------------------------------------------------------------------------------------->
+            <div class="row mt-4 g-6 justify-content-center">
+                <!------------------------------------------BOX 1------------------------------------------------------->
+                <div class="col-md-5 p-4 border border-4 border-danger me-4">
+                    <h4 class="text-danger">1. INCREDIBLY LOW EXCHANGE RATES!</h4>
+                    <p>The Japanese Yen marked one of the lowest exchange rates in history in July 2024, and the
+                        exchange
+                        rate remains incredibly low, making <b>2025</b> one of the most affordable years to visit Japan!
+                    </p>
+                    <div>
+                        <canvas id="myChart1"></canvas>
+                    </div>
+
+                    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                    <script>
+                        const ctx1 = document.getElementById('myChart1');
+
+                        new Chart(ctx1, {
+                            type: 'line',
+                            data: {
+                                labels: ['2021', '2022', '2023', '2024', '2025'],
+                                datasets: [{
+                                    label: 'US Dollar to Japanese Yen',
+                                    data: [114.18, 148.74, 151.50, 160.84, 154.23],
+                                    borderWidth: 2,
+                                    borderColor: 'red',
+                                    backgroundColor: 'red',
+                                }]
+                            },
+                            options: {
+                                scales: {
+                                    y: { beginAtZero: true }
+                                }
+                            }
+                        });
+                    </script>
+
+                    <p>As of January 2025, <b>1 US Dollar = 154 Japanese Yen!</b></p>
+                </div>
+
+                <!------------------------------------------BOX 2------------------------------------------------------->
+                <div class="col-md-5 p-4 border border-4 border-danger ms-4">
+                    <h4 class="text-danger">2. WORLD EXPO 2025 OSAKA KANSAI</h4>
+                    <img src="images/expo2025.png" alt="World Expo 2025 Osaka" class="img-fluid mb-3">
+                    <p>World Expo 2025 will be held in Osaka, Japan from April 13 - October 13! </p>
+                    <p>The theme for the expo is <i>"Designing Future Society for Our Lives"</i>. </p>
+                    <p>A World Expo is an event that brings together people and innovations from around the world in an
+                        effort to address issues facing humankind on a global scale. It is a place where new
+                        technologies
+                        and products are born, triggering greater convenience in our daily lives.</p>
+                </div>
+                <!------------------------------------------HEADING------------------------------------------------------>
+                <div>
+                    <h2 class="text-danger" style="padding: 50px 0px 20px;">COOL FACTS ABOUT JAPAN</h2>
+                </div>
+                <!------------------------------------------BOX 3------------------------------------------------------>
+                <div class="col-md-5 p-4 border border-4 border-danger me-4">
+                    <h4 class="text-danger">1. INCREASE IN NUMBER OF TRAVELERS</h4>
+                    <p>In 2024, the number of international visitors traveling to Japan amounted to
+                        approximately 36.87 million, setting a new record. That is a 15.65% increase from
+                        2019. And 2025 is expected to surpass this number, so if you are traveling this
+                        year, keep in mind that it will be very crowded.
+                    </p>
+
+                    <div>
+                        <canvas id="myChart2"></canvas>
+                    </div>
+
+                    <script>
+                        const ctx2 = document.getElementById('myChart2');
+
+                        new Chart(ctx2, {
+                            type: 'pie',
+                            data: {
+                                labels: ['2019', '2020', '2021', '2022', '2023', '2024'],
+                                datasets: [{
+                                    label: '# of Foreign Visitors in Millions',
+                                    data: [31.88, 4.12, 0.25, 3.83, 25.07, 36.87],
+                                    backgroundColor: ['red', '#0064d2', '#009d51', '#f5af02', '#835ad6', '#ff77ca'],
+                                    borderWidth: 2
+                                }]
+                            }
+                        });
+
+                        options: {
+                            scales: {
+                                y: {
+                                    beginAtZero: true
+                                }
+                            }
+                        }
+                    </script>
+                </div>
+
+                <!------------------------------------------BOX 4------------------------------------------------------->
+                <div class="col-md-5 p-4 border border-4 border-danger ms-4">
+                    <h4 class="text-danger">2. TOP 5 MOST POPULAR CITIES IN 2023</h4>
+                    <p>In 2023, the most visited city in Japan was <b>Tokyo</b> with a 52.9 visit rate in
+                        the city.</p>
+                    <p>Tokyo was also the #1 most recommended city to visit by <i>JapanRailPass</i></p>
+
+                    <div>
+                        <canvas id="myChart3"></canvas>
+                    </div>
+
+                    <script>
+                        const ctx3 = document.getElementById('myChart3');
+
+                        new Chart(ctx3, {
+                            type: 'pie',
+                            data: {
+                                labels: ['Tokyo', 'Osaka', 'Chiba Prefecture', 'Kyoto', 'Fukuoka Prefecture'],
+                                datasets: [{
+                                    label: 'Visit Rate',
+                                    data: [52.9, 39.6, 37.5, 29.8, 12.2],
+                                    backgroundColor: ['red', '#0064d2', '#009d51', '#f5af02', '#835ad6'],
+                                    borderWidth: 2
+                                }]
+                            }
+                        });
+
+                        options: {
+                            scales: {
+                                y: {
+                                    beginAtZero: true
+                                }
+                            }
+                        }
+                    </script>
+                </div>
+            </div>
+            <!-----------------------------------------TRENDING SPOTS------------------------------------------------------->
+            <div>
+                <h2 class="text-danger" style="padding: 50px 0px 20px;">TRENDING SPOTS TO VISIT</h2>
+            </div>
+
+
+            <div class="row mt-4 g-6 justify-content-center">
+                <div class="col-md-2 p-4 border border-4 border-danger me-4">
+                    <div class="city">
+                        <h2 class="text-danger">Tokyo</h2>
+                        <ul class="attractions">
+                            <li>Shibuya Crossing</li>
+                            <li>TeamLab Planets</li>
+                            <li>Odaiba</li>
+                            <li>Asakusa and Senso-ji Temple</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-2 p-4 border border-4 border-danger me-4">
+                    <div class="city">
+                        <h2 class="text-danger">Kyoto</h2>
+                        <ul class="attractions">
+                            <li>Fushimi Inari Taisha</li>
+                            <li>Arashiyama Bamboo Grove</li>
+                            <li>Kinkaku-ji (Golden Pavilion)</li>
+                            <li>Gion District</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-2 p-4 border border-4 border-danger me-4">
+                    <div class="city">
+                        <h2 class="text-danger">Osaka</h2>
+                        <ul class="attractions">
+                            <li>Dotonbori</li>
+                            <li>Osaka Castle</li>
+                            <li>Universal Studios Japan</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-2 p-4 border border-4 border-danger me-4">
+                    <div class="city">
+                        <h2 class="text-danger">Hokkaido</h2>
+                        <ul class="attractions">
+                            <li>Sapporo</li>
+                            <li>Furano and Biei</li>
+                            <li>Niseko</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-2 p-4 border border-4 border-danger me-4">
+                    <div class="city">
+                        <h2 class="text-danger">Okinawa</h2>
+                        <ul class="attractions">
+                            <li>Ishigaki Island</li>
+                            <li>Okinawa Churaumi Aquarium</li>
+                            <li>Shuri Castle</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-----------------------------------------ENDING PARAGRAPH------------------------------------------------------->
+            <div class="row mt-4">
+                <p>Japan remains one of the world’s most captivating travel destinations, offering a perfect
+                    blend of tradition and modernity, world-class cuisine, and breathtaking landscapes. </p>
+                <p>With 2025 bringing exciting global events, new attractions, and unforgettable seasonal
+                    beauty, there has never been a better time to explore everything Japan has to offer.
+                    Whether it’s your first visit or a return trip, Japan in 2025 promises an extraordinary
+                    experience!🌸</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
